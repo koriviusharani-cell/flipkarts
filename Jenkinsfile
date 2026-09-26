@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deployment'){
             steps{
-                sh 'scp target/hello-maven.war root@32.192.179.211:/home/ubuntu/tomcat/apache-tomcat-11.0.25/webapps'
+                sh 'scp target/hello-maven.war root@root@32.192.179.211:/home/ubuntu/tomcat/apache-tomcat-9.0.122/webapps'
             }
         }
     }
